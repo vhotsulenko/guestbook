@@ -1,3 +1,3 @@
 <?php
-include 'mybook.php' 
-echo test ?>
+include 'mybook.php'
+?>
