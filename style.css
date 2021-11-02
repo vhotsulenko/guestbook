@@ -1,0 +1,108 @@
+body{
+    background-color: #fafafa;
+}
+.container {
+    position: relatives;
+    width: 960px;
+    margin: 0 auto;
+    padding: 0px 0;
+    clear: both;
+}
+.quote {
+    overflow: hidden;
+    position: relative;
+}
+.quote .quote-icon{
+    display: block;
+    float: left;
+    width: 43px;
+    height: 39px;
+    margin-right: 5px;
+    margin-top: 19px;
+}
+.quote-close {
+    display: block;
+    float: left;
+    width: 30px;
+
+    margin-right: 5px;
+    top: 40%;
+    right: 1px;
+   position: absolute;
+}
+.quote .icon-img {
+    display: block;
+    float: left;
+    background-image: url(quote.png);
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 30px;
+}
+.close-img {
+    display: block;
+    float: left;
+    background-image: url(quote.png);
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 30px;
+}
+.quote-content {
+    width: 87%;
+    float: left;
+}
+.quote-content p {
+    font-size: 16px;
+    line-height: 24px;
+    text-shadow: #fffeff 0 1px 1px;
+}
+.droid {
+    font: italic 12px 'Droid Serif', Georgia, Times;
+    -webkit-text-size-adjust: 100%;
+    text-shadow: 0 1px 1px #ffffff;
+}
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+table{
+    margin: 0 auto;
+}
+input[type="submit"], input[type="reset"], input[type="button"] {
+    height: 29px;
+    line-height: 26px;
+    padding: 1px 12px 0px 12px;
+    display: inline-block;
+    background: #eee;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+}
+h2{
+    text-align: center;
+}
+form{
+    padding-bottom: 70px;
+}
+input[type="text"], textarea {
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+img{
+    width: 100%;
+}
+.data{
+    color: #aaa;
+    font-size: 14px;
+    margin-left: 50px;
+}
