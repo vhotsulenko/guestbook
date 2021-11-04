@@ -59,7 +59,10 @@ class mybook implements Imybook, Iprint{
         $this->_db->query($sql);
     }
     function printLetter($id){
-         //
+        $sql="SELECT id, gname, letter, datetime FROM letters 
+        WHERE id = $id";
+        $res=$this->_db->query($sql);
+        $res->save( "php://output")
         
     }
 
