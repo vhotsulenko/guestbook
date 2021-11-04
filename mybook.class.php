@@ -59,10 +59,14 @@ class mybook implements Imybook, Iprint{
         $this->_db->query($sql);
     }
     function printLetter($id){
+        $file = 'text.txt';
         $sql="SELECT id, gname, letter, datetime FROM letters 
         WHERE id = $id";
         $res=$this->_db->query($sql);
         $res->save( "php://output");
+       // if (file_exists($file)) { так как создает
+        file_put_contents($file, $res);
+      //  }
        // <script type="text/javascript">window.print();</script>
     }
 
