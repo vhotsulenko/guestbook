@@ -63,7 +63,7 @@ class mybook implements Imybook, Iprint{
         WHERE id = $id";
         $res=$this->_db->query($sql);
         $res->save( "php://output");
-        
+       // <script type="text/javascript">window.print();</script>
     }
 
 }
