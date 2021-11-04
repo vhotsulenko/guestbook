@@ -6,5 +6,5 @@ interface Imybook{
     function showLetter();
 //Удаление записи из Гостевой книги
     function deleteLetter($id);
-}
+    }
 
