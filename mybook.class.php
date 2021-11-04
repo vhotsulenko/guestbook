@@ -59,8 +59,8 @@ class mybook implements Imybook, Iprint{
         $this->_db->query($sql);
     }
     function printLetter($id){
-        $sql = "DELETE FROM letters WHERE id=$id";
-        $this->_db->query($sql);
+      //  $sql = "DELETE FROM letters WHERE id=$id";
+      //  $this->_db->query($sql);
     }
 
 }
