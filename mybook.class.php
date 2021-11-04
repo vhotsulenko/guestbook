@@ -1,8 +1,9 @@
 <?php
 //подключаем файл с интерфейсом
 include "Imybook.class.php";
+include "Iprint.class.php";
 //созд. класс mybook наследующий интерфейс Imybook
-class mybook  implements Imybook{
+class mybook implements Imybook, Iprint{
 //созд. константу класса DB_NAME и присваиваем ей значение mybook.db
     const  DB_NAME='mybook.db';
 //созд. закрытое свойство $_db для хранения объекта соединения с БД 
@@ -57,5 +58,10 @@ class mybook  implements Imybook{
         $sql = "DELETE FROM letters WHERE id=$id";
         $this->_db->query($sql);
     }
+    function printLetter($id){
+        $sql = "DELETE FROM letters WHERE id=$id";
+        $this->_db->query($sql);
+    }
+
 }
 
