@@ -1,5 +1,5 @@
 <?php
-interface Iprint extends Imybook{
+interface Iprint {
 //Печать
-    function printLetter($id);
+   public function printLetter($id);
 }
