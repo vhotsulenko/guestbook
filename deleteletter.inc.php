@@ -1,8 +1,9 @@
 <?php
 //фильтруем получ. данные
-$id=abs((int)$_GET['del']);
+//$id=abs((int)$_GET['del']);
 //Проверьте, корректны ли полученные данные
-if($id){
+//$_POST['id']
+if($_POST['id']){
     //вызовем метод deletePost
      $gbook->deleteLetter($id);
     // Перезапрашиваем страницу, чтобы избавиться от информации, 
@@ -10,5 +11,5 @@ if($id){
     header('Location: mybook.php');
     exit;
 }else{
-    $errMessage="хватит меня ломать!";
+    $errMessage="нет таких данных";
 }

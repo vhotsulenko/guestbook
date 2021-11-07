@@ -18,7 +18,13 @@ if(count ($allletters)>0){
                 <p class="droid"><strong><?php echo $gname ?></strong><span class="data"><?php echo @$dt ?></span><br><?php echo $letter ?></p>
         </div>
         <div class="quote-close">
-            <a href="mybook.php?del=<?php echo $id ?>"><img src="close.png" alt=""></a>
+            
+
+        <form action="" method="post">
+        
+          <input type="image" src="close.png" name="<?php echo $id ?>" />
+        </form>
+  
         </div>
     </div>
     <div class="clear"></div>
