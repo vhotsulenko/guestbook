@@ -12,7 +12,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 }
 //Проверяем был ли запрос методом GET на удаление записи
 // Если ДА, то подключаем файл с кодом для удаления записи
-if(isset($_GET['del'])){
+if(isset($_POST['del'])){
     include "deleteletter.inc.php";
 }
 ?>

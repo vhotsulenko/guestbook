@@ -18,6 +18,7 @@ class mybook implements Imybook, Iprint{
                 id INTEGER PRIMARY KEY,
                 gname TEXT,
                 letter TEXT,
+                
                 datetime INTEGER
             )";
             $this->_db->query($sql);
